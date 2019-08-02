@@ -1,5 +1,3 @@
-const MongoClient = require('mongodb').MongoClient;
-
 const Config = require('../config');
 
 let instance = null;

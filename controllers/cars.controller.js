@@ -11,7 +11,7 @@ class CarsController extends Controller {
 
     getAll (req, res, route) {
         this.find({}, route.query)
-            .then(cars => Response.Send(res, cars))
+            .then(Events => Response.Send(res, Events))
             .catch(error => Response.ApplicationError(res, error));
     }
 
@@ -23,7 +23,7 @@ class CarsController extends Controller {
     }
 
     postOne (req, res, route) {
-        let car = Utils.sanitize(route.data, ['name', 'color', 'year', 'description']) || {};
+        let car = Utils.sanitize(route.data, ['date', 'hour', 'name', 'description']) || {};
 
         let error = this._validCar(car);
         if(error) return Response.BadRequest(res, error);
