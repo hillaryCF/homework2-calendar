@@ -1,0 +1,31 @@
+<table>
+    <thead>
+        <tr>
+            <th (click)="sort" data-sort="name">
+                Name
+            </th>
+            <th (click)="sort" data-sort="brand">
+                Brand
+            </th>
+            <th (click)="sort" data-sort="color">
+                Color
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <template id="car">
+            <tr (click)="edit" data-id="{{_id}}">
+                <td>{{name}}</td>
+                <td>{{brand}}</td>
+                <td>{{color}}</td>
+            </tr>
+        </template>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">
+                footer
+            </td>
+        </tr>
+    </tfoot>
+</table>

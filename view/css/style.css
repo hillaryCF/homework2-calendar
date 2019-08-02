@@ -1,0 +1,64 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#calender {
+  height: 600px;
+  width: 63%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+a {
+  color:black;
+  float:left;
+}
+
+#monthyear {
+  display:inline;
+  color:white;
+}
+
+p , .daysheader {
+  
+}
+
+.daysheader { 
+  color:blue;
+}
+
+img {
+  display:inline;
+  width:16px;
+  transition:all 1s ease-in-out;
+  color: white;
+}
+
+#previous:hover {
+  transform: translate(-20px, 0px);
+}
+
+#next:hover {
+  transform: translate(20px, 0px);
+}
+
+#top{
+  height: 9%;
+  font-size: 18px;
+  padding-top: 17px;
+  text-align: left;
+  padding-left: 111px;
+  background: #06067b;
+}
+#days {
+left:50%;
+margin:20px;
+}
+#add  {
+  display:none;
+}
+
+#date:hover {
+  background-color:#FEC0CE;
+}

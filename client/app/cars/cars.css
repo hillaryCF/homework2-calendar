@@ -1,0 +1,10 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
+
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+tbody tr:hover {
+    background-color: blue;
+}

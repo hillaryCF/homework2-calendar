@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="project">
+    <div id="calender">
+      <p id="current"></p> 
+      <div id="top">
+        <img id="previous" src="https://cdn3.iconfinder.com/data/icons/icons-shop/512/left_arrow-256.png" onclick="prevYear()"/>
+        <p id="monthyear"></p>
+        <img id="next" src="https://cdn3.iconfinder.com/data/icons/icons-shop/512/right_arrow-256.png" onclick="nextYear()" /> 
+      </div>
+      <div id="days"></div>
+      <form >
+        <input id="add" type="text" name="Task" value=" ">
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
